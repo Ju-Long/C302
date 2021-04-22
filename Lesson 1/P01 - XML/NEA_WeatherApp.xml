@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<feed>
+    <title>1 Day Forecast</title>
+    <link href="http://www.nea.gov.sg/weather_3day.aspx/" rel="self"/>
+    <link href="http://www.nea.gov.sg/"/>
+    <updated>2018-03-31T10:13:00Z</updated>
+    <author>
+        <name>Meteorological Service Singapore</name>
+    </author>
+    <id>urn:uuid:20180331-d399-11d9-b93C-051405003af6</id>
+    <content type="xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <img src="http://www.weather.gov.sg/wp-content/themes/wiptheme/assets/img/icon-fair-warm.png"/>
+            <forecast>Fair and warm.</forecast>
+        </div>
+    </content>
+</feed>

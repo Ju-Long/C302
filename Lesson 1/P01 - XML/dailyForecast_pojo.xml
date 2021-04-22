@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<DailyForecasts>
+    <dailyForecast>
+        <date>2018-04-01</date>
+        <description>Sunny</description>
+        <temperatures>
+            <maxTemp unit="C">32</maxTemp>
+            <minTemp unit="C">27</minTemp>
+        </temperatures>
+        <windSpeed unit="kph">3</windSpeed>
+    </dailyForecast>
+</DailyForecasts>
