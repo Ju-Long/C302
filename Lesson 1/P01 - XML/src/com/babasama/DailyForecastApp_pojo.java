@@ -10,6 +10,8 @@ import javax.xml.transform.*;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.File;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 public class DailyForecastApp_pojo {
 
@@ -20,36 +22,41 @@ public class DailyForecastApp_pojo {
 
             Document document = builder.newDocument();
 
-            Element rootElement = document.createElement("DailyForecasts");
+            ArrayList<DailyForecast> data = new ArrayList<>();
+            data.add(new DailyForecast("2018-04-01", "Sunny", 32, 27, 3));
+
+            Element rootElement = document.createElement("DailyForecastsData");
             document.appendChild(rootElement);
 
-            Element dailyForecastElement = document.createElement("dailyForecast");
+            for (DailyForecast i : data) {
+                Element dailyForecastElement = document.createElement("dailyForecast");
 
-            Element dateElement = document.createElement("date");
-            dateElement.setTextContent("2018-04-01");
-            dailyForecastElement.appendChild(dateElement);
+                Element dateElement = document.createElement("date");
+                dateElement.setTextContent(i.getDate());
+                dailyForecastElement.appendChild(dateElement);
 
-            Element descriptionElement = document.createElement("description");
-            descriptionElement.setTextContent("Sunny");
-            dailyForecastElement.appendChild(descriptionElement);
+                Element descriptionElement = document.createElement("description");
+                descriptionElement.setTextContent(i.getDescription());
+                dailyForecastElement.appendChild(descriptionElement);
 
-            Element temperaturesElement = document.createElement("temperatures");
-            Element maxTempElement = document.createElement("maxTemp");
-            maxTempElement.setAttribute("unit", "C");
-            maxTempElement.setTextContent("32");
-            temperaturesElement.appendChild(maxTempElement);
-            Element minTempElement = document.createElement("minTemp");
-            minTempElement.setAttribute("unit", "C");
-            minTempElement.setTextContent("27");
-            temperaturesElement.appendChild(minTempElement);
-            dailyForecastElement.appendChild(temperaturesElement);
+                Element temperaturesElement = document.createElement("temperatures");
+                Element maxTempElement = document.createElement("maxTemp");
+                maxTempElement.setAttribute("unit", "C");
+                maxTempElement.setTextContent(i.getMaxTemp());
+                temperaturesElement.appendChild(maxTempElement);
+                Element minTempElement = document.createElement("minTemp");
+                minTempElement.setAttribute("unit", "C");
+                minTempElement.setTextContent(i.getMinTemp());
+                temperaturesElement.appendChild(minTempElement);
+                dailyForecastElement.appendChild(temperaturesElement);
 
-            Element windSpeedElement = document.createElement("windSpeed");
-            windSpeedElement.setAttribute("unit", "kph");
-            windSpeedElement.setTextContent("3");
-            dailyForecastElement.appendChild(windSpeedElement);
+                Element windSpeedElement = document.createElement("windSpeed");
+                windSpeedElement.setAttribute("unit", "kph");
+                windSpeedElement.setTextContent(i.getWindSpeed());
+                dailyForecastElement.appendChild(windSpeedElement);
 
-            rootElement.appendChild(dailyForecastElement);
+                rootElement.appendChild(dailyForecastElement);
+            }
             saveXML(document, "dailyForecast_pojo.xml");
 
         } catch (ParserConfigurationException pce) {
