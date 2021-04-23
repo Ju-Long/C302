@@ -32,18 +32,35 @@ public class StudentXMLBuilder {
 
             Element rootElement = document.createElement("student");
             document.appendChild(rootElement);
-            for (Student i: students) {
+//            for (Student i: students) {
+//                Element studentsElement = document.createElement("students");
+//                Element nameElement = document.createElement("name");
+//                String studentName = i.getName();
+//                nameElement.setTextContent(studentName);
+//                rootElement.appendChild(studentsElement);
+//                studentsElement.appendChild(nameElement);
+//
+//                Element contactsElement = document.createElement("contacts");
+//                for (String n : i.getContacts()) {
+//                    Element contactElement = document.createElement("contact");
+//                    contactElement.setTextContent(n);
+//                    contactsElement.appendChild(contactElement);
+//                }
+//                studentsElement.appendChild(contactsElement);
+//            }
+
+            for (int i = 0; i < students.size(); i++) {
                 Element studentsElement = document.createElement("students");
                 Element nameElement = document.createElement("name");
-                String student = i.getName();
-                nameElement.setTextContent(student);
+                String studentName = students.get(i).getName();
+                nameElement.setTextContent(studentName);
                 rootElement.appendChild(studentsElement);
                 studentsElement.appendChild(nameElement);
 
                 Element contactsElement = document.createElement("contacts");
-                for (String n : i.getContacts()) {
+                for (int n = 0; n < students.get(i).getContacts().size(); n++) {
                     Element contactElement = document.createElement("contact");
-                    contactElement.setTextContent(n);
+                    contactElement.setTextContent(students.get(i).getContacts().get(n));
                     contactsElement.appendChild(contactElement);
                 }
                 studentsElement.appendChild(contactsElement);
