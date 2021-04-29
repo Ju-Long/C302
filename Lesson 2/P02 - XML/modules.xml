@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modules>
+    <module code="C105">
+        <title>Introduction to Programming</title>
+        <year>1</year>
+    </module>
+    <module code="C203">
+        <title>Web Application Development in PHP</title>
+        <year>2</year>
+    </module>
+    <module code="C302">
+        <title>Web Services</title>
+        <year>3</year>
+    </module>
+</modules>

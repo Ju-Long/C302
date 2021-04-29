@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student name="John">
+        <contacts>
+            <contact>98711240</contact>
+            <contact>61284612</contact>
+        </contacts>
+    </student>
+    <student name="Mary">
+        <contacts>
+            <contact>81124621</contact>
+        </contacts>
+    </student>
+</students>
