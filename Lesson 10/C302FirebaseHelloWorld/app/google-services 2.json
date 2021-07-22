@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "618666055552",
+    "project_id": "c302-lesson10",
+    "storage_bucket": "c302-lesson10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:618666055552:android:8bdb4f1e9bf8d9f9389365",
+        "android_client_info": {
+          "package_name": "com.myapplicationdev.android.c302firebasehelloworld"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "618666055552-g3bqnr7thsao7qpbed2jr79oasn7otbp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC40wvnRTGRcVYZsjPBQ5uoq46RbOnjspU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "618666055552-g3bqnr7thsao7qpbed2jr79oasn7otbp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:618666055552:android:424b4c13777af12b389365",
+        "android_client_info": {
+          "package_name": "com.myapplicationdev.android.petboardingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "618666055552-g3bqnr7thsao7qpbed2jr79oasn7otbp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC40wvnRTGRcVYZsjPBQ5uoq46RbOnjspU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "618666055552-g3bqnr7thsao7qpbed2jr79oasn7otbp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
