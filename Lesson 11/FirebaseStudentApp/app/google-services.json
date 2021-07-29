@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "566119726613",
+    "project_id": "c302-b6029",
+    "storage_bucket": "c302-b6029.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566119726613:android:deb586c80da094f74b581c",
+        "android_client_info": {
+          "package_name": "com.myapplicationdev.android.firebasestudentapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "566119726613-pqsdqmrn3aspea0tnj1udrc8ov1g08kv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9pfo1jsy1xdFxVav-U3VmplG2OGDk7cc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "566119726613-pqsdqmrn3aspea0tnj1udrc8ov1g08kv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
