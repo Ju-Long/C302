@@ -13,7 +13,7 @@ if (!($card_name && $colour_id && $type_id) && $price < 0 && $amount < 0) {
     exit();
 }
 
-$query_add_card = "insert into card (cardName, colourId, typeId, price, quantity) values ('$card_name', $colour_id`             `   `, $type_id, $price, $amount)";
+$query_add_card = "insert into card (cardName, colourId, typeId, price, quantity) values ('$card_name', $colour_id, $type_id, $price, $amount)";
 $result = mysqli_query($connection, $query_add_card) or die(mysqli_error($connection));
 
 if ($result) {
